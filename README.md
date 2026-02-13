@@ -1,4 +1,4 @@
-\# 🚚 LogiTrack - Sistema de Paquetería de Última Milla
+🚚 LogiTrack - Sistema de Paquetería de Última Milla
 
 
 
@@ -6,7 +6,7 @@ Sistema de rastreo en tiempo real de paquetes con arquitectura de microservicios
 
 
 
-\## 📋 Descripción
+📋 Descripción
 
 
 
@@ -22,7 +22,7 @@ LogiTrack es una plataforma que permite:
 
 
 
-\## 🏗️ Arquitectura
+🏗️ Arquitectura
 
 
 
@@ -30,35 +30,19 @@ El sistema está compuesto por 4 microservicios:
 
 
 
-1\. \*\*Tracking Service\*\* (Go): Ingesta masiva de coordenadas GPS
+Tracking Service(Go): Ingesta masiva de coordenadas GPS
 
-2\. \*\*Order Service\*\* (Node.js): Gestión del estado del paquete
+Order Service(Node.js): Gestión del estado del paquete
 
-3\. \*\*Dispatch Service\*\* (Python): Asignación inteligente de rutas
+Dispatch Service(Python): Asignación inteligente de rutas
 
-4\. \*\*Notification Service\*\* (Node.js): Push notifications
-
-
-
-\## 🚀 Stack Tecnológico
+Notification Service(Node.js): Push notifications
 
 
 
-\- \*\*Backend\*\*: Node.js, Python, Go
-
-\- \*\*Databases\*\*: PostgreSQL, TimescaleDB, MongoDB
-
-\- \*\*Message Queue\*\*: RabbitMQ
-
-\- \*\*Container Orchestration\*\*: Kubernetes
-
-\- \*\*CI/CD\*\*: GitHub Actions
-
-\- \*\*Monitoring\*\*: Prometheus + Grafana
 
 
-
-\## 📁 Estructura del Proyecto
+📁 Estructura del Proyecto
 
 ```
 
@@ -76,7 +60,7 @@ logitrack/
 
 
 
-\## 👥 Contribuir
+👥 Contribuir
 
 
 
@@ -84,5 +68,5 @@ Lee \[CONTRIBUTING.md](CONTRIBUTING.md) para detalles del proceso de desarrollo.
 
 
 
-\## 📄 Licencia
+📄 Licencia
 
