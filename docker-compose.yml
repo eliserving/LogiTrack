@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  postgres-orders:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: orders_db
+      POSTGRES_USER: logitrack
+      POSTGRES_PASSWORD: dev_password
+    ports:
+      - "5432:5432"
+
+  timescaledb:
+    image: timescale/timescaledb:latest-pg15
+    environment:
+      POSTGRES_DB: tracking_db
+      POSTGRES_USER: logitrack
+      POSTGRES_PASSWORD: dev_password
+    ports:
+      - "5433:5432"
+
+  mongodb:
+    image: mongo:7
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: logitrack
+      MONGO_INITDB_ROOT_PASSWORD: dev_password
+    ports:
+      - "27017:27017"
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    environment:
+      RABBITMQ_DEFAULT_USER: logitrack
+      RABBITMQ_DEFAULT_PASS: dev_password
+    ports:
+      - "5672:5672"
+      - "15672:15672"
